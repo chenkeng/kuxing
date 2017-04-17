@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>下载页面</title>
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        .nctouch-home-top {
+            display: block;
+            min-height: 5.2rem;
+            position: relative;
+            z-index: 2;
+            background-color: rgba(255,255,255,0.90);
+            overflow: hidden;
+        }
+
+        .fixed-Width {
+            max-width:100%;
+
+        }
+        header{
+            background: #F8F8F8;
+            /* height: 1.95rem; */
+            height: 100%;
+            position: absolute;
+            z-index: 8;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: auto;
+            border-bottom: solid 0.05rem #EEE;
+        }
+        .header-inp .search-input {
+            float: left;
+            width: 80%;
+            text-align: center;
+            height: 2rem;
+            padding: 0.2rem 0;
+            font-size: 0.7rem;
+            line-height: 2rem;
+            color: #BBB;
+            vertical-align: top;
+            border: none 0;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+        }
+        .header-inp {
+            position: relative;
+            display: block;
+            height: 2.4rem;
+            border: solid 0.05rem #DEDEDE;
+            border-radius: 0.2rem;
+            margin: 2rem 0 0;
+            background-color: #e6e7e8;
+            text-align: left;
+        }
+        .header-inp .icon {
+            float: left;
+            vertical-align: top;
+            width: 1rem;
+            height: 1rem;
+            margin: 0.7rem 0.7rem;
+            background-image: url(images/search_ico.png);
+            background-repeat: no-repeat;
+            background-position: 50% 50%;
+            background-size: 70%;
+            opacity: 1;
+        }
+
+        .bgcontent{
+            background: url("images/downloadapk.png") no-repeat;
+            background-size: cover;
+            height:51rem;
+        }
+        .applogo{
+            width:100%;
+            margin: 0 auto;
+        }
+        .applogo img{
+            width: 5.6rem;
+            height:5.6rem;
+        }
+        .bgcontent .applogo,.bgcontent .slogan,.bgcontent .downloadapk{
+            text-align: center;
+        }
+        .applogo{
+            padding-top: 2rem;
+        }
+        .slogan{
+            color: #ffffff;
+            padding:6rem 4.5rem 2rem;
+        }
+        .slogan p{
+            line-height: 4;
+            font-size: 1.2rem;
+        }
+        .downloadapk {
+            padding: 0rem 4.5rem;
+        }
+        .downloadapk .title{    color: white;
+            text-align: left;
+            font-size: 1.2rem;
+            padding: 1rem 0;}
+        .downloadapk p span{
+            color: #FFFFFF;
+        }
+        .downloadapk .invite{
+            text-align: left;
+            padding: .5rem 0;
+        }
+        .downloadapk .publish{
+            color: #FFFFFF;
+        }
+        .downloadapk a{
+            color: red;
+            width: 22.4rem;
+            height:4rem;
+            display: inline-block;
+            border: 1px solid red;
+            border-radius: 2rem;
+            line-height: 4;
+        }
+        .slogan .avtor{
+            line-height: 4;
+            width: 12rem;
+            text-indent: 5rem;
+            display: inline-block;
+            background: url(images/member.png) no-repeat left center;
+            background-size: 4rem;
+
+        }
+    </style>
+</head>
+<body>
+<div class="nctouch-home-top fixed-Width">
+    <header id="header" class="transparent">
+        <div class="logo"></div>
+        <div class="header-wrap"> <a href="tmpl/search.html" class="header-inp">
+            <i class="icon"></i>
+            <span class="search-input" id="keyword" placeholder="mercury.io">mercury.io</span> </a>
+        </div>
+    </header>
+</div>
+
+<div class="bgcontent">
+    <div class="applogo"><img src="images/logo.png" alt=""></div>
+    <div class="slogan clearfix"><p class="avtor left">Superhan</p><p class="right">邀请您加入酷星</p></div>
+    <div class="downloadapk">
+        <p class="title">第一步：</p>
+        <a href="">下载酷星App</a>
+    </div>
+    <div class="downloadapk">
+        <p class="title">第二步：</p>
+        <p class="invite"><span>长安福址邀请码</span></p>
+        <a href="">38475</a>
+    </div>
+    <div class="downloadapk">
+        <p class="title">第二步：</p>
+        <p class="publish">注册新用户并填入邀请码，<br> 然后就可以查看／发布服务啦！</p>
+
+    </div>
+</div>
+</body>
+</html>
