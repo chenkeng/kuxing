@@ -56,13 +56,15 @@
     }
     
     .myorder {
-        background-color: #000000;
-        height: 4rem;
-        line-height: 4;
+        background-color: #1e1e1e;
+        
     }
     
     .order {
+            border-bottom: 1px solid #eee;
         padding: 0 1rem;
+        height: 4rem;
+        line-height: 4;
     }
     
     .order span {
@@ -86,9 +88,11 @@
         text-align: center;
         width: 25%;
     }
-    
+    .item p{
+        padding: 1rem;
+    }
     .item p img {
-        padding-top: 2rem;
+        padding-top: 1rem;
     }
     
     .mytable {
@@ -118,38 +122,79 @@
     .mytable li img {
         padding-top: 2rem
     }
+    
     .footnav {
-    min-width: 320px;
-    background: #e5e5e5;
-    border-top: 1px solid #d5d5d5;
-    bottom: 0;
-    font-size: 0.28rem;
-    height: 2.2rem;
-    position: fixed;
-    width: 100%;
-    z-index: 6;
-}
-.footnav ul {
-    font-size: 0;
-}
-.footnav ul li a {
-    display: block;
-    position: relative;
-}
-.footnav ul li i {
-    vertical-align: top;
-    display: inline-block;
-    width: 1rem;
-    height: 1rem;
-    margin: 0 auto 0.1rem auto;
-    opacity: 0.5;
-}
-.footnav ul li p {
-    font-size: 0.55rem;
-    color: #888;
-    line-height: 1rem;
-    height: 1rem;
-}
+        min-width: 320px;
+        background: #141414;
+        /*border-top: 1px solid #d5d5d5;*/
+        bottom: 0;
+        font-size: 0.28rem;
+        height: 4rem;
+        position: fixed;
+        width: 100%;
+        z-index: 6;
+    }
+    
+    .footnav ul {
+        font-size: 0;
+    }
+    
+    .footnav ul li a {
+        display: block;
+        position: relative;
+    }
+    
+    .footnav ul li i {
+        vertical-align: top;
+        display: inline-block;
+        width: 2rem;
+        height: 2rem;
+        margin: 0 auto 0.1rem auto;
+        opacity: 0.5;
+    }
+    
+    .footnav ul li p {
+        font-size: 0.55rem;
+        color: #888;
+        line-height: 1rem;
+        height: 1rem;
+    }
+    
+    i.home {
+        background-image: url(images/shouye@2x.png);
+        background-size: cover;
+    }
+    
+    i.categroy {
+        background-image: url(images/dongtai@2x.png);
+        background-size: cover;
+    }
+    
+    i.cart {
+        background-image: url(images/message.png);
+        background-size: cover;
+    }
+    
+    #publishnews {
+        background-image: url(images/publishnews@2x.png);
+        background-size: cover;
+        margin-top: -2rem;
+        width: 6rem;
+        height: 6rem;
+    }
+    
+    i.mine {
+        background-image: url(images/love.png);
+        background-size: cover;
+    }
+    
+    .footnav ul li {
+        vertical-align: top;
+        display: inline-block;
+        text-align: center;
+        width: 20%;
+        padding: 0.7rem 0 0.2rem 0;
+    }
     </style>
 </head>
 
@@ -178,20 +223,20 @@
                     <br> 待确认</p>
             </div>
             <div class="item">
-                <p><img src="images/beforepay@2x.png" alt=""></p>
-                <span>待确认</span>
+                <p><img src="images/beforepay@2x.png" alt=""><br>待确认</p>
+                
             </div>
             <div class="item">
-                <p><img src="images/beforeregister@2x.png" alt=""></p>
-                <span>待确认</span>
+                <p><img src="images/beforeregister@2x.png" alt=""><br>待确认</p>
+               
             </div>
             <div class="item">
-                <p><img src="images/beforesignout@2x.png" alt=""></p>
-                <span>待确认</span>
+                <p><img src="images/beforesignout@2x.png" alt=""><br>待确认</p>
+                
             </div>
         </div>
     </div>
-    <ul class="mytable clearfix" style="margin-top: 9rem">
+    <ul class="mytable clearfix">
         <li>
             <p><img src="images/newplan@2x.png" alt="">
                 <br>发布新服务</p>
@@ -214,7 +259,7 @@
         </li>
         <li></li>
     </ul>
-    <ul class="mytable clearfix">
+    <ul class="mytable clearfix" style="     margin-bottom: 4rem;">
         <li>
             <p><img src="images/VIP@2x.png" alt="">
                 <br>我的会员</p>
@@ -241,11 +286,11 @@
     </ul>
     <div id="footnav" class="footnav clearfix">
         <ul>
-            <li><a href="http://www.kuxing.com/wap"><i class="home"></i><p>首页</p></a></li>
-            <li><a href="http://www.kuxing.com/wap/tmpl/product_first_categroy.html"><i class="categroy"></i><p>分类</p></a></li>
-            <li><a href="http://www.kuxing.com/wap/tmpl/search.html"><i class="search"></i><p>搜索</p></a></li>
-            <li><a href="http://www.kuxing.com/wap/tmpl/cart_list.html"><span id="cart_count"><i class="cart"></i></span><p>购物车</p></a></li>
-            <li><a href="http://www.kuxing.com/wap/tmpl/member/member.html"><i class="member"></i><p>我的商城</p></a></li>
+            <li><a><i class="home"></i><p>首页</p></a></li>
+            <li><a><i class="categroy"></i><p>动态</p></a></li>
+            <li><a><i id="publishnews"></i></a></li>
+            <li><a><span id="cart_count"><i class="cart"></i></span><p>消息</p></a></li>
+            <li><a><i class="mine"></i><p>我的</p></a></li>
         </ul>
     </div>
 </body>

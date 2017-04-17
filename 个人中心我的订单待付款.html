@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/style.css">
+    <style >
+        .ordermes{
+            list-style:none;
+            background-color: f4f4f5;
+            height:4rem;
+            display: flex;
+        }
+        .ordermes li{
+            display: inline-block;
+            flex:1;
+            justify-content: center;
+            text-align: center;
+            line-height: 4rem;
+        }
+        .ordermes li.active{
+            color: red;
+            border-bottom: 4px solid red;
+        }
+        .wrap{
+            background-color: #FFFFFF;
+            padding: 0 2rem;
+            margin-bottom: .5rem;
+        }
+        .wrap .kind{
+            height:;4rem;line-height: 4;
+            font-size: 1.2rem;
+            border-bottom: 1px solid #eee;
+        }
+        .wrap .kind span{
+            display: inline-block;
+            width: 3rem;
+            height: 4.8rem;
+            line-height: 4rem;
+            background: url(images/checkon@2x.png) no-repeat center;
+            background-size: 3rem;
+        }
+        .inner{border-bottom: 1px solid #EEEEEE}
+        .inner .title {
+            height:;4rem;line-height: 4;
+        }
+        .title span{
+            font-size: 1.2rem;
+            color: #bdbdbd;
+        }
+        .title span:nth-child(2){
+            color: red;}
+        .title span i{
+            color: #0097e0;
+            font-style: normal;
+        }
+        .boxImg{
+            background: url("images/1.png") no-repeat center;
+            background-size: 4.32rem;
+            width: 5rem;
+            height:5rem;
+            display: inline-block;
+        }
+        .box{
+            display: inline-block;
+            float: right;
+            margin-right: 12rem;
+
+            vertical-align: middle;
+        }
+        .box p{
+            line-height: 2rem;
+        }
+        .box-status{line-height: 4;
+            height:4rem;}
+        .box-status span{
+            display: inline-block;
+            width:7rem;
+            text-align: right;
+            font-size: 1.2rem;
+        }
+        .save{
+            position: fixed;
+            left:0;
+            bottom:0;
+            width:100%;
+            line-height:4;
+            height:4rem;
+        background-color: #FFFFFF}
+        .save span,.save a{
+            display: inline-block;padding: 0 1rem;
+        }
+        .save a{
+            background-color: #bdbdbd;
+        }
+    </style>
+</head>
+<body>
+<ul class="ordermes clearfix">
+    <li>全部</li>
+    <li>带接单</li>
+    <li class="active">待付款</li>
+    <li>带钱到</li>
+    <li>待签退</li>
+</ul>
+<div class="wrap">
+    <p class="kind">待付款 <span class="right"></span></p>
+    <div class="inner">
+        <div class="title clearfix">
+            <span class="left">服务商：<i>BBB</i></span><span class="right">$3800</span>
+        </div>
+        <div class="mainbox">
+            <div class="boxImg"></div>
+            <div class="box">
+                <p>环球歌舞比晒培训</p>
+                <p>11yue 22ri 下午</p>
+            </div>
+        </div>
+
+    </div>
+    <div class="box-status clearfix">
+        <span class=" right">取消订单</span><span class=" right">催促订单</span>
+    </div>
+</div>
+<div class="wrap">
+    <p class="kind">待付款 <span class="right"></span></p>
+    <div class="inner">
+        <div class="title clearfix">
+            <span class="left">服务商：<i>BBB</i></span><span class="right">$3800</span>
+        </div>
+        <div class="mainbox">
+            <div class="boxImg"></div>
+            <div class="box">
+                <p>环球歌舞比晒培训</p>
+                <p>11yue 22ri 下午</p>
+            </div>
+        </div>
+
+    </div>
+    <div class="box-status clearfix">
+        <span class=" right">取消订单</span><span class=" right">催促订单</span>
+    </div>
+</div>
+
+<div class="save clearfix">
+    <span class="left">共需支付：￥0元</span> <a class="right">确认支付</a>
+</div>
+</body>
+</html>

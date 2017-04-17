@@ -1,11 +1,294 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        body{
+            background-color: #000000;
+        }
+        .bgheader {
+            background-color: #4c4c4c;
+            height: 12.45rem;
+        }
 
+        .scan {
+            height: 3.52rem;
+            width: 100%;
+        }
+
+        .scan img {
+            width: 1.68rem;
+            height: 1.6rem;
+            margin-top: 1rem;
+            margin-right: 1rem;
+        }
+
+        .member {
+            padding: 1rem;
+            height: 7.45rem;
+        }
+
+        .avtor {
+            width: 20%;
+            padding-top: 1rem;
+        }
+
+        .avtor img {
+            width: 5.6rem;
+            height: 5.6rem;
+        }
+
+        .memberInfo {
+            width: 80%;
+            padding-top: 2rem;
+        }
+
+        .memberInfo .membername {
+            font-size: 1.2rem;
+            color: #FFFFFF;
+            line-height: 1.2;
+        }
+
+        .memberInfo .memberID {
+            font-size: 1rem;
+            color: #FFFFFF;
+        }
+
+        .myorder {
+            background-color: #1e1e1e;
+
+        }
+
+        .order {
+            border-bottom: 1px solid #eee;
+            padding: 0 1rem;
+            height: 4rem;
+            line-height: 4;
+        }
+
+        .order span {
+            display: inline-block;
+            color: #FFFFFF;
+        }
+
+        .order span a {
+            text-decoration: none;
+            color: #FFFFFF;
+        }
+
+        .orderItems {
+            background-color: #1e1e1e;
+            color: #ffffff;
+        }
+
+        .item {
+            float: left;
+            display: inline-block;
+            text-align: center;
+            width: 20%;
+        }
+        .item p{
+            padding: 1rem;
+        }
+        .item p img {
+            padding-top: 1rem;
+        }
+
+        .mytable {
+            list-style: none;
+            background-color: #1e1e22;
+            color: #9a9a9a;
+            margin-top: 1rem;
+        }
+
+        .mytable li {
+            text-align: center;
+            display: inline-block;
+            width: calc(100%/3);
+            float: left;
+            height: 7.84rem;
+            border: 1px solid #eee;
+            box-sizing: border-box;
+            background-color: #1e1e1e;
+        }
+
+        .mytable li p {
+            line-height: 3.5;
+            background-color: #1e1e1e;
+            color: #9a9a9a;
+        }
+
+        .mytable li img {
+            padding-top: 2rem
+        }
+
+        .footnav {
+            min-width: 320px;
+            background: #141414;
+            /*border-top: 1px solid #d5d5d5;*/
+            bottom: 0;
+            font-size: 0.28rem;
+            height: 4rem;
+            position: fixed;
+            width: 100%;
+            z-index: 6;
+        }
+
+        .footnav ul {
+            font-size: 0;
+        }
+
+        .footnav ul li a {
+            display: block;
+            position: relative;
+        }
+
+        .footnav ul li i {
+            vertical-align: top;
+            display: inline-block;
+            width: 2rem;
+            height: 2rem;
+            margin: 0 auto 0.1rem auto;
+            opacity: 0.5;
+        }
+
+        .footnav ul li p {
+            font-size: 0.55rem;
+            color: #888;
+            line-height: 1rem;
+            height: 1rem;
+        }
+
+        i.home {
+            background-image: url(images/shouye@2x.png);
+            background-size: cover;
+        }
+
+        i.categroy {
+            background-image: url(images/dongtai@2x.png);
+            background-size: cover;
+        }
+
+        i.cart {
+            background-image: url(images/message.png);
+            background-size: cover;
+        }
+
+        #publishnews {
+            background-image: url(images/publishnews@2x.png);
+            background-size: cover;
+            margin-top: -2rem;
+            width: 6rem;
+            height: 6rem;
+        }
+
+        i.mine {
+            background-image: url(images/love.png);
+            background-size: cover;
+        }
+
+        .footnav ul li {
+            vertical-align: top;
+            display: inline-block;
+            text-align: center;
+            width: 20%;
+            padding: 0.7rem 0 0.2rem 0;
+        }
+    </style>
 </head>
-<body>
 
+<body>
+<div class="bgheader">
+    <div class="scan  clearfix">
+        <img class="right" src="images/scan@2x.png" alt="">
+    </div>
+    <div class="member clearfix">
+        <div class="avtor left">
+            <img src="images/member.png" alt="">
+        </div>
+        <div class="memberInfo right">
+            <div class="membername">TFBOYS</div>
+            <div class="memberID">ID:12345455</div>
+        </div>
+    </div>
+</div>
+<div class="myorder">
+    <div class="order clearfix">
+        <span class="left">我的订单</span><span class="right">  <a href="">所有订单</a><i>&gt;</i></span>
+    </div>
+    <div class="orderItems clearfix">
+        <div class="item">
+            <p><img src="images/beforeasure@2x.png" alt="">
+                <br> 待确认</p>
+        </div>
+        <div class="item">
+            <p><img src="images/beforepay@2x.png" alt=""><br>待付款</p>
+
+        </div>
+        <div class="item">
+            <p><img src="images/beforeregister@2x.png" alt=""><br>待签到</p>
+
+        </div>
+        <div class="item">
+            <p><img src="images/beforesignout@2x.png" alt=""><br>待签退</p>
+
+        </div>
+        <div class="item">
+            <p><img src="images/beforesignout@2x.png" alt=""><br>待评价</p>
+
+        </div>
+    </div>
+</div>
+
+<ul class="mytable clearfix" style="     margin-bottom: 4rem;">
+    <li>
+        <p><img src="images/VIP@2x.png" alt="">
+            <br>我的会员</p>
+    </li>
+    <li>
+        <p><img src="images/money@2x.png" alt="">
+            <br>我的钱包</p>
+    </li>
+    <li>
+        <p><img src="images/count@2x.png" alt="">
+            <br>我的积分</p>
+    </li>
+    <li>
+        <p><img src="images/mysave@2x.png" alt="">
+            <br> 我的收藏</p>
+    </li>
+    <li>
+        <p><img src="images/mycare@2x.png" alt="">
+            <br>我的关注</p>
+    </li>
+    <li>
+        <p><img src="images/myfans@2x.png" alt="">
+            <br>我的粉丝</p>
+    </li>
+    <li>
+        <p><img src="images/setter@2x.png" alt="">
+            <br>设置</li>
+    <li>
+        <p>
+            <br></p>
+    </li>
+    <li>
+        <p>
+            <br></li>
+</ul>
+<div id="footnav" class="footnav clearfix">
+    <ul>
+        <li><a><i class="home"></i><p>首页</p></a></li>
+        <li><a><i class="categroy"></i><p>动态</p></a></li>
+        <li><a><i id="publishnews"></i></a></li>
+        <li><a><span id="cart_count"><i class="cart"></i></span><p>消息</p></a></li>
+        <li><a><i class="mine"></i><p>我的</p></a></li>
+    </ul>
+</div>
 </body>
+
 </html>
