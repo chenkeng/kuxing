@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>订单详情</title>
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        .box{
+            background-color: #FFFFFF;
+
+        }
+        .box-list{
+            height:4rem;
+            line-height: 4rem;
+            padding: 0 1rem;
+            border-bottom: 1px solid #bdbdbd; font-size: 1.2rem;
+        }
+        .status{
+            display: inline-block;
+            background: url("images/myservice@2x.png") no-repeat left center;
+            background-size: ;
+            text-indent: 3rem;
+
+        }
+        .warm{
+            color: red;}
+        .box .warm{
+            height:2.24rem;
+            line-height: 2.24; padding: 0 1rem;
+        }
+         .activity{
+             padding:1rem;
+             margin-top: 1rem;
+        }
+         .activity .box-lf,.activity .box-md,.activity .box-rt{
+             display: inline-block;
+         }
+        .activity .box-lf{
+
+        }
+        .activity .box-lf img{
+            width:100%;
+            height:100%;
+            width:6.4rem;
+            height:5.44rem;
+        }
+        .activity .box-rt{
+
+        }
+        .activity .box-rt span{
+            display: block;
+            /*width: 5.6rem;*/
+            text-align: right;
+        }
+        .activity .box-md{
+            margin-left: 1rem;
+            width:15rem;
+        }
+        .activity .box-md p{
+            font-size: 1.28rem;
+        }
+        .activity .box-md p:last-child{
+            color: #bdbdbd;
+        }
+        .original-price{
+            color: red;font-size: 1.92rem;
+        }
+        .count-price{
+            text-decoration: line-through;
+            color: #bdbdbd;
+            font-size:1.44rem;
+        }
+        .activity .box-rt .red-package{
+            border:1px solid red;
+            color: red;font-size: 1rem;
+            border-radius: .5rem;
+            padding: .3rem;
+            text-align: center;
+        }
+        .orderInfo{
+            font-size: 1.2rem;
+            color: #bdbdbd;
+            margin-top: 1rem;
+            padding: 0 1rem;
+            line-height:2;
+        }
+        .order{
+            padding: 0 1rem;
+            background-color: #FFFFFF;
+        }
+        .box .order{
+            font-size: 1.2rem;
+        }
+        .order p{
+            line-height: 2.5;
+        }
+
+       .order .bordertp{
+            border-top: 1px solid #e0e0e0;
+        }
+       .order .mark{line-height: 1.5;padding:1rem 0;}
+        .order .order-time{
+            height: 5rem;
+            line-height: 5rem;
+        }
+        .order .order-time .box-lf{font-size: 1.2rem}
+        .order .order-time .box-rt{
+            padding-top: .5rem;
+            font-size: 1.2rem;
+        }
+        .order .box-rt span{
+            display: block;
+            line-height: 1.5;font-size: 1.2rem;
+        }
+        .address {
+            background: url("images/address.png") no-repeat left center;
+            background-size: 1.6rem;
+            text-indent: 3rem;
+            line-height: 3;
+            font-size: 1.2rem;
+        }
+        .cooperation{
+            background-color: #FFFFFF;
+            padding: .5rem 1rem;
+        }
+        .cooperation p{
+            font-size: 1.2rem;
+            line-height: 1.5;
+        }
+        .order-price p{
+            height:4rem;
+            line-height: 4rem;
+            padding:0 1rem;
+            font-size: 1.2rem;
+            border-bottom: 1px solid #bdbdbd;
+        }
+        .connect{
+            margin-top: 1rem;
+            background: url(images/message.png) no-repeat center;
+            background-size: 2rem;
+            text-indent: 7rem;
+            text-align: center;
+            line-height: 4rem;
+            background-color: #FFFFFF;
+        }
+        .order-record{
+            background-color: #FFFFFF;
+            padding: 0 1rem;
+        }
+        .order-record p{
+            height:4rem;
+            line-height: 4rem;
+            padding:0 1rem;
+            font-size: 1.2rem;
+            border-bottom: 1px solid #bdbdbd;
+
+        }
+        .save{
+            height:5rem;
+            line-height:5rem;background-color: #FFFFFF;
+            padding: 0 1rem;
+            margin-top: 4rem;
+        }
+        .save a{
+            display: inline-block;
+            color: #FFFFFF;
+            font-size: 1.2rem;
+            height: 3rem;
+            line-height: 3rem;
+            margin: 1rem 0 1rem 1rem;
+            padding: 0 1rem;
+            background-color: #1e1e1e;
+        }
+    </style>
+</head>
+<body>
+    <div class="box clearfix">
+        <p class="box-list clearfix"><span class="status">订单状态</span><span class="right">悲剧但</span></p>
+        <p class="warm right">剩余时间：2小时25分钟</p>
+    </div>
+
+<div class="box activity clearfix">
+    <div class="box-lf left">
+        <img src="" alt="">
+    </div>
+    <div class="box-md">
+        <p>环球组合歌唱舞蹈载歌载舞河东party</p>
+        <p>广州</p>
+    </div>
+    <div class="box-rt right">
+        <span class="original-price"><sub>￥</sub>3800</span>
+        <span class="count-price">￥4000</span>
+        <span class="red-package">红包￥88</span>
+    </div>
+</div>
+
+    <p class="orderInfo">订单信息</p>
+    <div class="box order">
+        <div class="bordertp clearfix order-time">
+            <div class="box-lf left">服务开始时间</div>
+            <div class="box-rt right">
+                <span>2017-12-15 下午</span><span>12：00-19.598</span>
+            </div>
+        </div>
+        <p class="address bordertp">广州越秀区显示累额中路5好，烈士陵园东区</p>
+        <p class="fontsize30 bordertp">负责人：王大锤</p>
+        <p class="fontsize30 bordertp mark">备注：最好穿西装货啊这比价正式的衣服过来，3点前到达转杯，不要迟到</p>
+    </div>
+    
+    <p class="orderInfo">合作说明</p>
+    <div class="box cooperation">
+        <p>住宿要求：三星级以上的酒店
+           </p>
+        <p> 交通工具：飞机
+            </p>
+        <p>不接单地区：内蒙古、西藏
+            </p>
+        <p>助理：一人，无需包住宿费，需包交通费</p>
+    </div>
+
+    <p class="orderInfo">订单价格</p>
+    <div class="box order-price">
+        <p><span>订单价格</span><span class="right">￥3800</span>
+        </p>
+        <p><span>积分抵扣</span><span class="right">-￥10</span>
+        </p>
+        <p><span>代金券</span><span class="right">￥100</span>
+        </p>
+        <p><span>订单总价</span><span class="right">￥3600</span></p>
+    </div>
+<p class="connect">联系对方</p>
+<p class="orderInfo">订单记录</p>
+<div class="box order-record">
+    <p><span>订单号</span><span class="right">123456789987654</span></p>
+    <p><span>下单时间</span><span class="right">2050-12-41 19:00</span></p>
+    <p><span>订单交易合同</span><span class="right"><a href="">&gt;</a></span></p>
+</div>
+
+<div class="save clearfix">
+    <a href="" class="right">催促接单</a><a href="" class="right">取消订单</a>
+</div>
+</body>
+</html>

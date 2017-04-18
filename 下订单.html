@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>下订单</title>
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        .box{
+            background-color: #FFFFFF;
+        }
+        .box .warm{
+            height:2.24rem;
+            line-height: 2.24; padding: 0 1rem;
+        }
+        .activity{
+            padding:1rem;
+
+        }
+        .activity .box-lf,.activity .box-md,.activity .box-rt{
+            display: inline-block;
+        }
+        .activity .box-lf{
+
+        }
+        .activity .box-lf img{
+            width:100%;
+            height:100%;
+            width:6.4rem;
+            height:5.44rem;
+        }
+        .activity .box-rt{
+
+        }
+        .activity .box-rt span{
+            display: block;
+            /*width: 5.6rem;*/
+            text-align: right;
+        }
+        .activity .box-md{
+            margin-left: 1rem;
+            width:15rem;
+        }
+        .activity .box-md p{
+            font-size: 1.28rem;
+        }
+        .activity .box-md p:last-child{
+            color: #bdbdbd;
+        }
+        .original-price{
+            color: red;font-size: 1.92rem;
+        }
+        .count-price{
+            text-decoration: line-through;
+            color: #bdbdbd;
+            font-size:1.44rem;
+        }
+        .activity .box-rt .red-package{
+            border:1px solid red;
+            color: red;font-size: 1rem;
+            border-radius: .5rem;
+            padding: .3rem;
+            text-align: center;
+        }
+        .orderInfo{
+            font-size: 1.2rem;
+            color: #bdbdbd;
+            margin-top: 1rem;
+            padding: 0 1rem;
+            line-height:2;
+        }
+        .main{
+            background-color: #FFFFFF;
+
+        }
+        .main p{
+            height:4rem;line-height: 4rem;padding: 0 1rem;
+            border-bottom:1px solid #bdbdbd;
+            font-size: 1.2rem;
+        }
+        .main p span{
+            display: inline-block;
+            width:2rem;
+            height:4rem;
+        }
+        .main p span.delete{
+            background: url("images/delete.png") no-repeat center;
+            background-size: 2rem;
+        }
+        .address{
+            background: url("images/address.png") no-repeat left center;
+            background-size: 2rem;text-indent: 3rem;
+        }
+        .main p input{
+            border:none;
+            font-size: 1.2rem;
+            line-height: 4rem;
+            color: #bdbdbd;
+        }
+        .rely,.mark{
+            margin: 0 1rem;
+            padding: 0;
+        }
+        .mark textarea{
+            width: 100%;
+            height: 10rem;
+            line-height: 2rem;
+            font-size: 1.2rem;
+            color: #bdbdbd;
+            text-indent: 1em;
+            border-radius: .5rem;
+            border: none;
+        }
+    </style>
+</head>
+<body>
+<div class="box activity clearfix">
+    <div class="box-lf left">
+        <img src="" alt="">
+    </div>
+    <div class="box-md">
+        <p>环球组合歌唱舞蹈载歌载舞河东party</p>
+        <p>广州</p>
+    </div>
+    <div class="box-rt right">
+        <span class="original-price"><sub>￥</sub>3800</span>
+        <span class="count-price">￥4000</span>
+        <span class="red-package">红包￥88</span>
+    </div>
+</div>
+
+<p class="orderInfo">逸轩档期</p>
+<div class="main">
+    <p class="clearfix">2017-12-15|下午<span class="right delete"></span></p>
+    <p class="clearfix">2017-12-15|晚上<span class="right delete"></span></p>
+</div>
+
+<p class="orderInfo">服务弟弟</p>
+<div class="main">
+    <p class="clearfix"><input class="address" type="text" placeholder="请选择。。。"></p>
+    <p class="clearfix"><input type="text" placeholder="请输入详细地址。。。"></p>
+</div>
+
+<p class="orderInfo">负责人</p>
+<div class="main rely">
+    <p class="clearfix"><input  type="text" placeholder="请输入负责人姓名..."></p>
+</div>
+
+<p class="orderInfo">备注</p>
+<div class="main mark">
+    <textarea name="" placeholder="备注服务开始时间、详细内容或其他需求。。。"></textarea>
+</div>
+</body>
+</html>

@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>付款</title>
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        .box{
+            background-color: #FFFFFF;
+
+        }
+        .box-list{
+            height:4rem;
+            line-height: 4rem;
+            padding: 0 1rem;
+            border-bottom: 1px solid #bdbdbd; font-size: 1.2rem;
+        }
+        .status{
+            display: inline-block;
+            background: url("images/myservice@2x.png") no-repeat left center;
+            background-size: ;
+            text-indent: 3rem;
+
+        }
+        .warm{
+            color: red;}
+        .box .warm{
+            height:2.24rem;
+            line-height: 2.24; padding: 0 1rem;
+        }
+        .activity{
+            padding:1rem;
+
+        }
+        .activity .box-lf,.activity .box-md,.activity .box-rt{
+            display: inline-block;
+        }
+        .activity .box-lf{
+
+        }
+        .activity .box-lf img{
+            width:100%;
+            height:100%;
+            width:6.4rem;
+            height:5.44rem;
+        }
+        .activity .box-rt{
+
+        }
+        .activity .box-rt span{
+            display: block;
+            /*width: 5.6rem;*/
+            text-align: right;
+        }
+        .activity .box-md{
+            margin-left: 1rem;
+            width:15rem;
+        }
+        .activity .box-md p{
+            font-size: 1.28rem;
+        }
+        .activity .box-md p:last-child{
+            color: #bdbdbd;
+        }
+        .original-price{
+            color: red;font-size: 1.92rem;
+        }
+        .count-price{
+            text-decoration: line-through;
+            color: #bdbdbd;
+            font-size:1.44rem;
+        }
+        .activity .box-rt .red-package{
+            border:1px solid red;
+            color: red;font-size: 1rem;
+            border-radius: .5rem;
+            padding: .3rem;
+            text-align: center;
+        }
+        .orderInfo{
+            font-size: 1.2rem;
+            color: #bdbdbd;
+            margin-top: 1rem;
+            padding: 0 1rem;
+            line-height:2;
+        }
+        .order{
+
+            background-color: #FFFFFF;
+        }
+        .box .order{
+            font-size: 1.2rem;
+        }
+        .order p{
+            padding:0 1rem;
+            line-height: 4rem;
+            font-size: 1.2rem;
+            border-top: 1px solid #bdbdbd;
+        }
+
+        .order .bordertp{
+            border-top: 1px solid #e0e0e0;
+        }
+        .order .mark{line-height: 1.5;padding:1rem 0;}
+        .order .order-time{
+            padding: 0 1rem;
+            height: 5rem;
+            line-height: 5rem;
+        }
+        .order .order-time .box-lf{font-size: 1.2rem}
+        .order .order-time .box-rt{
+            padding-top: .5rem;
+            font-size: 1.2rem;
+        }
+        .order .box-rt span{
+            display: block;
+            line-height: 1.5;font-size: 1.2rem;
+        }
+        .address {
+            background: url("images/address.png") no-repeat left center;
+            background-size: 1.6rem;
+            text-indent: 3rem;
+            line-height: 3;
+            font-size: 1.2rem;
+        }
+        .cooperation{
+            background-color: #FFFFFF;
+            padding: .5rem 1rem;
+        }
+        .cooperation p{
+            font-size: 1.2rem;
+            line-height: 1.5;
+        }
+        .order-price p{
+            height:4rem;
+            line-height: 4rem;
+            padding:0 1rem;
+            font-size: 1.2rem;
+            border-bottom: 1px solid #bdbdbd;
+        }
+        .agree{
+            background: url("images/agree.png") no-repeat center;
+            background-size: 2rem;
+            display: inline-block;
+            width:2rem;
+            height:4rem;
+        }
+        .unagree{
+            background: url("images/unagree.png") no-repeat center;
+            background-size: 2rem;
+            display: inline-block;
+            width:2rem;
+            height:4rem;
+        }
+        .connect{
+            margin-top: 1rem;
+            background: url(images/message.png) no-repeat center;
+            background-size: 2rem;
+            text-indent: 7rem;
+            text-align: center;
+            line-height: 4rem;
+            background-color: #FFFFFF;
+        }
+        .payways p{
+            line-height: 4rem;
+            height:4rem;
+            text-indent: 3rem;
+        }
+        .payways .package{
+            background: url("images/package@2x.png") no-repeat 1rem center;
+            background-size: 2rem;
+        }
+        .payways .wechat{
+            background: url("images/wechat@2x.png") no-repeat 1rem center;
+            background-size: 2rem;
+        }
+        .payways .zhifubao{
+            background: url("images/zhifubao@2x.png") no-repeat 1rem center;
+            background-size: 2rem;
+        }
+        .order-record{
+            background-color: #FFFFFF;
+
+        }
+        .order-record p{
+            height:4rem;
+            line-height: 4rem;
+            padding:0 1rem;
+            font-size: 1.2rem;
+            border-bottom: 1px solid #bdbdbd;
+
+        }
+
+        .payways p span{
+            display: inline-block;
+            width: 2rem;
+            height:4rem;
+            line-height: 4rem;
+        }
+        .payways p .checked{
+            background: url("images/checked.png") no-repeat center;
+            background-size: 2rem;
+        }
+        .payways p .unchecked{
+            background: url("images/uncheck.png") no-repeat center;
+            background-size: 2rem;
+        }
+        .save{
+            /*position: absolute;*/
+            /*left:0;*/
+            /*bottom:0;*/
+            background-color: #FFFFFF;
+            margin-top: 3rem;
+        }
+        .save p{
+            padding-left:1rem;
+            line-height:4rem;
+            font-size: 1.2rem;
+        }
+        .save a{
+            display: inline-block;
+            color: #FFFFFF;
+            font-size: 1.2rem;
+
+            line-height: 4rem;
+
+            padding: 0 1rem;
+            background-color: #1e1e1e;
+        }
+        .save p span{
+            display: inline-block;
+        }
+        .save p i{
+            color: red;
+        }
+        .save p .red{
+            display: inline-block;
+            color: red;
+            font-size: 2rem;
+        }
+    </style>
+</head>
+<body>
+<p class="orderInfo">订单1</p>
+
+<div class="box activity clearfix">
+    <div class="box-lf left">
+        <img src="" alt="">
+    </div>
+    <div class="box-md">
+        <p>环球组合歌唱舞蹈载歌载舞河东party</p>
+        <p>广州</p>
+    </div>
+    <div class="box-rt right">
+        <span class="original-price"><sub>￥</sub>3800</span>
+        <span class="count-price">￥4000</span>
+        <span class="red-package">红包￥88</span>
+    </div>
+</div>
+
+
+<div class="box order">
+    <div class="bordertp clearfix order-time">
+        <div class="box-lf left">服务开始时间</div>
+        <div class="box-rt right">
+            <span>2017-12-15 下午</span><span>12：00-19.598</span>
+        </div>
+    </div>
+    <p>定单原件 <span class="right">￥3800</span></p>
+    <p>积分抵扣 <span class="right">-￥10</span></p>
+    <p>代金券 <span class="right">-￥1000</span></p>
+    <p>还需支付 <span class="right">$3600</span></p>
+    <p>同意《订单交易合同》 <span class="agree right"></span></p>
+</div>
+
+<p class="orderInfo">订单1</p>
+
+<div class="box activity clearfix">
+    <div class="box-lf left">
+        <img src="" alt="">
+    </div>
+    <div class="box-md">
+        <p>环球组合歌唱舞蹈载歌载舞河东party</p>
+        <p>广州</p>
+    </div>
+    <div class="box-rt right">
+        <span class="original-price"><sub>￥</sub>3800</span>
+        <span class="count-price">￥4000</span>
+        <span class="red-package">红包￥88</span>
+    </div>
+</div>
+
+
+<div class="box order">
+    <div class="bordertp clearfix order-time">
+        <div class="box-lf left">服务开始时间</div>
+        <div class="box-rt right">
+            <span>2017-12-15 下午</span><span>12：00-19.598</span>
+        </div>
+    </div>
+    <p>定单原件 <span class="right">￥3800</span></p>
+    <p>积分抵扣 <span class="right">-￥10</span></p>
+    <p>代金券 <span class="right">-￥1000</span></p>
+    <p>还需支付 <span class="right">$3600</span></p>
+    <p>同意《订单交易合同》 <span class="unagree right"></span></p>
+</div>
+
+
+
+<p class="orderInfo">支付方式</p>
+<div class="box order-record payways">
+    <p class="package">钱包支付<span class="right checked"></span></p>
+    <p class="wechat">微信支付<span class="right checked"></span></p>
+    <p class="zhifubao">支付宝支付<span class="right unchecked"></span></p>
+</div>
+
+<div class="save">
+    <p class="clearfix"><span>共需支付 </span><i> ￥</i><span class="red">7380</span> <a class="right">确认支付</a></p>
+</div>
+</body>
+</html>

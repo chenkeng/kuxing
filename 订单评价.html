@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>评价</title>
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        .comment{
+            background-color: #FFFFFF;
+        }
+        .comment p{
+            line-height: 4rem;
+            height:4rem;border-bottom: 1px solid #bdbdbd;
+            padding: 0 1rem;
+        }
+        .comment p span{
+            display: inline-block;
+            width: 4rem;
+            height: 4rem;
+            margin-left: 2rem;
+        }
+        .comment .good{
+            background: url("images/good@2x.png") no-repeat center;
+            background-size: 4rem;
+        }
+        .comment .medium{
+            background: url("images/medium@2x.png") no-repeat center;
+            background-size: 4rem;
+        }
+        .comment .bad{
+            background: url("images/bad@2x.png") no-repeat center;
+            background-size: 4rem;
+        }
+        .comment .star{
+            background: url("images/cstar@2x.png") no-repeat center;
+            background-size: 2.5rem;
+        }
+        .comment .unstar{
+            background: url("images/cunstar@2x.png") no-repeat center;
+            background-size: 2.5rem;
+        }
+        .comment-star{
+            height: 4rem;line-height: 4rem;
+        }
+        .comment .comment-star span{
+            display: inline-block;
+            width:2.5rem;
+            height:4rem;
+            margin-left: 1rem;
+        }
+        .commentInfo{
+            padding:0 1rem;
+        }
+        .commentInfo p{
+            margin-top: 1rem;
+            font-size: 1.2rem;
+            line-height: 2;
+            color: #1e1e1e;
+        }
+        .commentInfo textarea{
+            background-color: #FFFFFF;
+            width:100%;
+            height:10rem;
+            line-height: 2;
+            font-size: 1.2rem;
+            border: none;
+            resize: none;
+            border-radius: .4rem;
+        }
+    </style>
+</head>
+<body>
+    <div class="comment">
+        <p class="clearfix">服务态度 <span class="good right"></span><span class="medium right"></span><span class="bad right"></span></p>
+        <p class="comment-star clearfix">服务质量
+            <span class="star right"></span>
+            <span class="star right"></span>
+            <span class="star right"></span>
+            <span class="star right"></span>
+            <span class="unstar right"></span>
+        </p>
+    </div>
+    <div class="commentInfo">
+        <p>评论</p>
+        <textarea placeholder="输入评论。。。"></textarea>
+    </div>
+
+</body>
+</html>
