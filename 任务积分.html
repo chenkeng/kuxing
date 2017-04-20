@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>我的前包</title>
+    <link rel="stylesheet" type="text/css" href="css/base.css">
+    <link rel="stylesheet" href="css/style.css">
+    <style type="text/css">
+    * {
+        margin: 0;
+        padding: 0;
+    }
+    
+    .box {
+        background-color: red;
+        height: 12.8rem;
+        text-align: center;
+        line-height: 2.8rem;
+    }
+    
+    .box p {
+        color: #fff;
+    }
+    
+    .box p:nth-child(1) {
+        padding-top: 3rem;
+        font-size: 2rem;
+    }
+    
+    .item a,
+    .invite a {
+        text-decoration: none;
+        color: #4c4c4c;
+        display: block;
+        width: 100%;
+    }
+    
+    .item {
+        background: url(images/integration@2x.png) no-repeat 1rem center;
+        background-size: 2rem;
+    }
+    
+    .invite {
+        margin-top: .5rem;
+        line-height: 4rem;
+        height: 4rem;
+        padding: 0 1rem;
+        text-indent: 3rem;
+        font-size: 1.2rem;
+        background: url(images/invitefriend@2x.png) no-repeat 1rem center;
+        background-size: 2rem;
+        background-color: #fff;
+    }
+    
+    .item {
+        margin-top: .5rem;
+        line-height: 4rem;
+        height: 4rem;
+        background-color: #fff;
+        padding: 0 1rem;
+        text-indent: 3rem;
+        font-size: 1.2rem;
+    }
+    
+    i {
+        color: red;
+    }
+    
+    .item a span {
+        background-color: #ddd;
+        border-radius: 0.8rem;
+        height: 2rem;
+        line-height: 2rem;
+        margin-top: 1rem;
+        text-align: center;
+        width: 4rem;
+        text-indent: 0;
+    }
+    </style>
+</head>
+
+<body>
+    <div class="box">
+        <p>2000</p>
+        <p>积分</p>
+    </div>
+    <p class="item"><a href="">首次下单获得<i>100</i>积分<span class="right">领取</span></a></p>
+    <p class="item"><a href="">成功邀请<i>1</i>位好友获得<i>100</i>积分<span class="right">已领取</span></a></p>
+    <p class="item"><a href="">连续登陆第<i>4</i>天获得<i>10</i>积分<span class="right">未获得</span></a></p>
+    <p class="invite"><a href="">邀请好友注册<span class="right">&gt;</span></a></p>
+</body>
+
+</html>

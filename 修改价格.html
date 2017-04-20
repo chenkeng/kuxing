@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>修改价格</title>
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        p{
+            background-color: #FFFFFF;
+            padding: 0 1rem;
+            height:4rem;
+            line-height: 4rem;
+            font-size: 1.2rem;
+        }
+        .new-price input{
+
+            height:4rem;
+            line-height: 4rem;
+            display: block;
+            border:none;
+            width: 100%;
+            font-size: 1.2rem;
+            text-indent: .5rem;
+            background: url("images/moneyIcon.png") no-repeat 28rem center;
+            background-size: .8rem;
+            background-color: #FFFFFF;
+            border-radius: .5rem;
+
+        }
+
+        .new-price{margin:1rem .5rem;
+            /*width: 100%;*/
+        }
+        span{
+            padding:.2rem 1rem;
+        }
+    </style>
+</head>
+<body>
+    <p class="clearfix">原价 <span class="right">$3900</span></p>
+    <div class="new-price">
+        <input type="text" placeholder="请输入新价格" class="moneyIcon">
+
+    </div>
+    <span>*红包数额将与锌价格等比例减少</span>
+</body>
+</html>

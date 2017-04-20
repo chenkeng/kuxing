@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>个人身份认证</title>
+    <link rel="stylesheet" type="text/css" href="css/base.css">
+    <link rel="stylesheet" href="css/style.css">
+    <style type="text/css">
+    * {
+        margin: 0;
+        padding: 0;
+    }
+    
+    body {
+        background-color: #efefef;
+    }
+    
+    .box {
+        padding: 0 1rem;
+    }
+    
+    .box .title {
+        font-size: 1rem;
+        line-height: 2.5rem;
+        color: #1e1e1e;
+        margin-top: .5rem;
+    }
+    
+    .box input[type="text"] {
+        text-indent: 1em;
+        border: none;
+        width: 100%;
+        background-color: #ffffff;
+        height: 4rem;
+        line-height: 4rem;
+        font-size: 1.2rem;
+        color: #bdbdbd;
+    }
+    
+    .redwarm {
+        color: red;
+        line-height: 2.5rem;
+    }
+    
+    .IDtitle{
+    font-size: 1.2rem;
+    line-height: 3rem;
+    margin-top: 1rem;
+    }
+    .box .face{
+        width: 13.6rem;
+        height: 7.2rem;
+        /*border:1px dashed black;*/
+        background: url(images/gallery@2x.png) no-repeat center;
+    }
+    .save{
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        background-color: black;
+        height: 4rem;
+        line-height: 4rem;
+        color: #fff;
+        text-align: center;
+        font-size: 1.2rem;
+    }
+
+
+    </style>
+</head>
+
+<body>
+    <div class="box">
+        <p class="title">姓名</p>
+        <input type="text" placeholder="请输入负责人的全名。。。">
+    </div>
+    <div class="box">
+        <p class="title">身份证号</p>
+        <input type="text" placeholder="请输入如责任的身份证号码...">
+        <span class="redwarm">*身份证号码格式不正确</span>
+    </div>
+    <div class="box">
+        <p class="IDtitle">身份证正面照</p>
+        <div class="face">
+        </div>
+    </div>
+    <div class="box">
+        <p class="IDtitle">身份证背面照</p>
+        <div class="face">
+        </div>
+    </div>
+    <div class="box">
+        <p class="IDtitle">本人持身份证正面免冠照</p>
+        <div class="face">
+        </div>
+    </div>
+    <div class="save">认证 </div>
+</body>
+
+</html>

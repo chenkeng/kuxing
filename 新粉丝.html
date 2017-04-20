@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>新粉丝</title>
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        .navheader .backto {
+            height:4rem;
+            line-height: 4rem;
+            background-color: #1e1e1e;
+            margin: 0 auto;
+            text-align: center;
+        }
+        .backto a{
+            position: absolute;
+            left:0;
+            top:0;
+            display: inline-block;
+            width: 4rem;
+            height:4rem;
+            /*background-color: #FFFFFF;*/
+        }
+        .backto a img{
+            width: 25%;
+            height: 50%;
+            padding: 1rem;
+        }
+        .backto span{
+            display: inline-block;
+            text-align: center;
+            color: #FFFFFF;
+            font-size: 1.3rem;
+        }
+        .box {
+            padding: 1rem;
+            border-bottom: 1px solid #DCDCDC;
+            background-color: #FFFFFF;
+        }
+
+        .avtor,
+        .comment,
+        .choiced {
+            display: inline-block;
+            height: 5rem;
+        }
+
+        .avtor {
+            position: relative;
+            left:0;
+            top:0;
+            float: left;
+            width: 5rem;
+            height: 5rem;
+        }
+        .avtor .span{
+            width:.8rem;
+            height:.8rem;
+            border-radius: 50%;
+            position: absolute;
+            right: 0;
+            top:0;
+            background-color: red;
+        }
+        .comment {
+            float: left;
+            width: 16rem;
+            margin-left: 1rem;
+        }
+
+        .comment span {
+            display: block;
+            height: 2.5rem;
+            font-size: 1.2rem;
+            line-height: 5rem;
+        }
+
+        .comment .bold {
+            font-weight: bold;
+        }
+
+        .choiced {
+            text-align: center;
+            float: right;
+            line-height: 3rem;
+            height: 3rem;
+            margin-top: 1rem;
+            width: 5rem;
+            color: #bdbdbd;
+
+        }
+
+        .circle {
+            width: 100%;
+            height: 100%;
+            border-radius: 50%;
+        }
+
+
+        .emptyfans{
+            margin-top: 10rem;
+            text-align: center;
+        }
+        .emptyfans img{
+            width: 8rem;
+
+        }
+        .emptyfans p{
+            margin-top: 2rem;
+            font-size: 1.2rem;
+            color: #bdbdbd;
+        }
+    </style>
+</head>
+<body>
+<div class="navheader">
+
+
+    <div class="backto">
+        <a href=""><img src="images/arrow@2x.png" alt=""></a>
+        <span>新粉丝</span>
+    </div>
+</div>
+
+
+<div class="box clearfix">
+    <div class="avtor">
+        <img src="images/member.png" class="circle">
+        <div class="span"></div>
+    </div>
+    <div class="comment">
+        <span><a  class="bold">习近平</a>关注了你</span>
+
+    </div>
+    <div class="choiced">
+        11:20
+    </div>
+</div>
+
+<div class="box clearfix">
+    <div class="avtor">
+        <img src="images/member.png" class="circle">
+        <div class="span"></div>
+    </div>
+    <div class="comment">
+        <span><a  class="bold">习近平</a>关注了你</span>
+
+    </div>
+    <div class="choiced">
+        11:20
+    </div>
+</div>
+
+<div class="box clearfix">
+    <div class="avtor">
+        <img src="images/member.png" class="circle">
+        <!--<div class="span"></div>-->
+    </div>
+    <div class="comment">
+        <span><a  class="bold">习近平</a>关注了你</span>
+
+    </div>
+    <div class="choiced">
+        11:20
+    </div>
+</div>
+
+
+<div class="emptyfans">
+    <img src="images/emptyfans@2x.png" alt="">
+    <p>还没有新粉丝哦！</p>
+</div>
+
+</body>
+</html>

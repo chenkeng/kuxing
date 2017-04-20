@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>酷星开发内部交易流程和规则</title>
+</head>
+<body>
+<p>
+    <strong><span style="font-size:19px;font-family:宋体">酷星交易流程</span></strong><span style="font-family:宋体">：</span>
+</p>
+<p>
+    <span>1</span><span style="font-family:宋体">、</span><span>C</span><span style="font-family:宋体">端商品的下单购买；</span>
+</p>
+<p>
+    <span>2</span><span style="font-family:宋体">、下单时，选择工作的日期时间、地点、场所名字、负责人等信息，并提交订单；</span>
+</p>
+<p>
+    <span>3</span><span style="font-family:宋体">、提交之后，生成订单</span>
+</p>
+<p>
+    <span>4</span><span style="font-family:宋体">、订单提交之后，平台提示</span><span>B</span><span style="font-family:宋体">端接单，如</span><span>B</span><span style="font-family:宋体">端查看了档期和地区、价钱都可以接单，按“确认接单”（另外情况：如双方</span><span>IM</span><span style="font-family:宋体">沟通后可改价钱，</span><span>B</span><span style="font-family:宋体">端可以把原来价钱修改，再按“确认接单”，并提示双方价钱已修改）</span>
+</p>
+<p>
+    <span>5</span><span style="font-family:宋体">、平台提示</span><span>C</span><span style="font-family:宋体">端“已确认接单，待付款”，</span><span>C</span><span style="font-family:宋体">端会跳到支付页面，选择支付方式为微信和支付宝、星币抵扣（打勾）、积分抵扣（打勾），双方合作<span style="color:red">“模板合同”进入（打勾）</span>，都选择好了，按“确认付款”；（如还有另外第三方同时拍这商品服务，</span><span>B</span><span style="font-family:宋体">端也确认接单，被第三方先付款，则也提示原</span><span>C</span><span style="font-family:宋体">端，档期已被订了，“付款失败”）</span>
+</p>
+<p>
+    <span>&nbsp;</span>
+</p>
+<p>
+    <span>6</span><span style="font-family:宋体">、支付完成后，</span><span>C</span><span style="font-family:宋体">端显示“付款完成”并生成签到二维码。</span><span>B</span><span style="font-family:宋体">端订单生成“确认出发”。（如</span><span>B</span><span style="font-family:宋体">端按“确认出发”，定位服务则打开，</span><span>C</span><span style="font-family:宋体">端可以进去看到</span><span>B</span><span style="font-family:宋体">端位置）</span>
+</p>
+<p>
+    <span>7</span><span style="font-family:宋体">、当</span><span>B</span><span style="font-family:宋体">端到达场所内，演出前</span><span>B</span><span style="font-family:宋体">端要求</span><span>C</span><span style="font-family:宋体">端签到，扫一扫</span><span>C</span><span style="font-family:宋体">端手机上的签到码进行签到；（定位服务自动关闭）同时生成签退二维码（平台需提示双方已签到完毕，服务结束后请扫签退码）</span>
+</p>
+<p>
+    <span>8</span><span style="font-family:宋体">、</span><span>B</span><span style="font-family:宋体">端服务完成，要求</span><span>C</span><span style="font-family:宋体">端给签退码扫一扫，签退完成（提示双方），平台则把服务款打到</span><span>B</span><span style="font-family:宋体">端平台账户里（并提示</span><span>B</span><span style="font-family:宋体">端有一笔资金收入）</span>
+</p>
+<p>
+    <span>9</span><span style="font-family:宋体">、双方交易完成</span>
+</p>
+<p>
+    <span style="font-family:宋体">《这里特别要求：如</span><span>B</span><span style="font-family:宋体">端修改过价钱后，当订单结束，</span><span>C</span><span style="font-family:宋体">端可以在“所有订单”里查看“成功交易”订单，<span style="background:yellow;background:yellow">那里出现</span></span><span style="background:yellow;background:yellow">2</span><span style="font-family:宋体;background:yellow;background:yellow">张订单凭证【改为在由上角功能内显示“查看原价订单”】</span><span style="font-family:宋体">，一张是原价钱订单凭证，下面是成交价钱的订单凭证》用户放大图可保存其中一张，但不显示头衔（头衔即顶层栏“<span style="color:red">原价</span>”和“<span style="color:red">成交价</span>”字样</span>
+</p>
+<p>
+    <span>&nbsp;</span>
+</p>
+<p>
+    <span>&nbsp;</span>
+</p>
+<p>
+    <strong><span style="font-family:宋体">档期订单说明</span></strong><span style="font-family:宋体">：档期以月历形式显示，服务发布每天可订最多为</span><span>3</span><span style="font-family:宋体">个时间区域订单（<span style="color:red">即每天最多</span></span><span style="color:red">3</span><span style="font-family:宋体;color:red">个订单</span><span style="font-family:宋体">），上午：</span><span>6:00-11:59//</span><span style="font-family:宋体">下午：</span><span>12:00-19:59//</span><span style="font-family:宋体">晚上：</span><span>20:00-2:00</span><span style="font-family:宋体">（为了不错乱时间系统，晚上电脑系统设置区域为</span><span>20:00-23:59</span><span style="font-family:宋体">，但给用户文字显示为</span><span>20:00-2:00</span><span style="font-family:宋体">让用户好理解）</span>
+</p>
+<p>
+    <span style="font-family:宋体;color:red">档期用户最早可提前</span><span style="color:red">6</span><span style="font-family:宋体;color:red">个月下单预定（每个订单都是单独订单，就算连续订了三天，都要按</span><span style="color:red">3</span><span style="font-family:宋体;color:red">个单独订单操作，每天正常签到，和正常签退）</span>
+</p>
+<p>
+    <span>&nbsp;</span>
+</p>
+<p>
+    <strong><span style="font-family:宋体">签到</span></strong><span style="font-family: 宋体">：</span><span>B</span><span style="font-family:宋体">端在订单选项时间内进行签到，（例：</span><span>C</span><span style="font-family:宋体">端选项订单时间为下午</span><span>12</span><span style="font-family:宋体">：</span><span>00-19:59</span><span style="font-family:宋体">），那</span><span>B</span><span style="font-family:宋体">端就要在这个时间区域内签到）</span><span>(</span><span style="font-family:宋体">当</span><span>B</span><span style="font-family:宋体">端签到后，双方都不能退单</span><span>)</span>
+</p>
+<p>
+    <span>&nbsp;</span>
+</p>
+<p>
+    <strong><span style="font-family:宋体">签到超时</span></strong><span style="font-family:宋体">：如</span><span>B</span><span style="font-family:宋体">端迟到或没到在签到区域超时没签到，平台会自动跟</span><span>C</span><span style="font-family:宋体">端发起退款，退款倒计时为</span><span>6</span><span style="font-family:宋体">个小时。<span style="background:lime;background:lime">【在</span></span><span style="background:lime;background:lime">6</span><span style="font-family: 宋体;background:lime;background:lime">小时内双方会显示“还剩</span><span style="background:lime;background:lime">N</span><span style="font-family:宋体;background:lime;background:lime">小时将自动退款”，期间</span><span style="background:lime;background:lime">C</span><span style="font-family:宋体;background:lime;background:lime">端不能申请退款，在这超时</span><span style="background:lime;background:lime"> 6</span><span style="font-family:宋体;background:lime;background:lime">小时内，如果</span><span style="background:lime;background:lime">B</span><span style="font-family:宋体;background:lime;background:lime">端签到了，“还剩</span><span style="background:lime;background:lime">N</span><span style="font-family:宋体;background:lime;background:lime">小时将自动退款”自动取消，则走正常流程。</span><span style="font-family:宋体">，如果<span style="background:lime;background:lime">“还剩</span></span><span style="background:lime;background:lime">6</span><span style="font-family:宋体;background:lime;background:lime">小时将自动退款”</span><span style="font-family: 宋体">过了</span><span>B</span><span style="font-family:宋体">端还没签到，款项自动退回</span><span>C</span><span style="font-family:宋体">端</span>
+</p>
+<p>
+    <span>&nbsp;</span>
+</p>
+<p>
+    <strong><span style="font-family:宋体">签退</span></strong><span style="font-family: 宋体">：在</span><span>B</span><span style="font-family:宋体">端签到后</span><span>12</span><span style="font-family:宋体">小时内</span><span>B</span><span style="font-family:宋体">端必须要签退，如签到后</span><span>12</span><span style="font-family:宋体">小时内</span><span>C</span><span style="font-family:宋体">端不给</span><span>B</span><span style="font-family:宋体">端签退，</span><span>B</span><span style="font-family:宋体">端可以发起申请平台仲裁。<span style="color:red">（如</span></span><span style="color:red">B</span><span style="font-family:宋体;color:red">端在签到后</span><span style="color:red">12</span><span style="font-family:宋体;color:red">小时内没有签退，平台会自动开启退款倒计时告诉</span><span style="color:red">B</span><span style="font-family:宋体;color:red">端在</span><span style="color:red">48</span><span style="font-family:宋体;color:red">小时内不进行平台仲裁，款项就会自动退还给</span><span style="color:red">C</span><span style="font-family:宋体;color:red">端用户，如</span><span style="color:red">B</span><span style="font-family:宋体;color:red">端进行平台仲裁倒计时会取消，仲裁资料提交后平台会在</span><span style="color:red">5</span><span style="font-family:宋体;color:red">天内处理完毕）</span><span style="font-family:宋体">。</span>
+</p>
+<p>
+    <span>&nbsp;</span>
+</p>
+<p>
+    <strong><span style="text-decoration:underline;"><span style="font-size:16px">B</span></span></strong><strong><span style="text-decoration:underline;"><span style="font-size:16px;font-family:宋体">端签到后完成服务</span></span></strong><strong><span style="text-decoration:underline;"><span style="font-size:16px">C</span></span></strong><strong><span style="text-decoration:underline;"><span style="font-size:16px;font-family:宋体">端不给签退码扫签退，</span></span></strong><strong><span style="text-decoration:underline;"><span style="font-size:16px">12</span></span></strong><strong><span style="text-decoration:underline;"><span style="font-size:16px;font-family:宋体">小时后</span></span></strong><strong><span style="text-decoration:underline;"><span style="font-size:16px">B</span></span></strong><strong><span style="text-decoration:underline;"><span style="font-size:16px;font-family:宋体">端商家申请平台仲裁</span></span></strong><span style="font-family:宋体">：（当</span><span>B</span><span style="font-family:宋体">端按确认出发键后平台需提示：建议演出时做好平台仲裁证据，以免发生损失）</span>
+</p>
+<p>
+    <span>1 </span><span style="font-family:宋体">提供你与当地演出场所门口合照照片一张，（清晰能看见样子和场所名字）</span>
+</p>
+<p>
+    <span>2 </span><span style="font-family:宋体">提供场所现场演出照片</span><span>2</span><span style="font-family:宋体">张或</span><span>1</span><span style="font-family:宋体">段视频链接（清晰能看脸）</span>
+</p>
+<p>
+    <span>3 </span><span style="font-family:宋体">文字填写原因</span>
+</p>
+<p>
+    <span style="font-family:宋体">（经平台介入联系双方了解进行判定，如了解后</span><span>B</span><span style="font-family:宋体">端正确，</span><span>C</span><span style="font-family:宋体">端无理，平台有权把</span><span>C</span><span style="font-family:宋体">端款项打给</span><span>B</span><span style="font-family:宋体">端）</span>
+</p>
+<p>
+    <span>&nbsp;</span>
+</p>
+<p>
+    <strong><span>&nbsp;</span></strong>
+</p>
+<p>
+    <strong><span style="font-family:宋体">实名认证：</span></strong><span style="font-family:宋体;background:yellow;background:yellow">【建议改为：未点击认证之前都为未认证，未认证身份下只可同时发布一条服务。认证后无论是商家和个人，都可同时发布</span><span style="background:yellow;background:yellow">5</span><span style="font-family:宋体;background:yellow;background:yellow">条服务，</span><span style="font-family:宋体;color:red">再升级钻石会员后可同时发布</span><span style="color:red">20</span><span style="font-family:宋体;color:red">条</span><span style="font-family:宋体;background:yellow;background:yellow">】</span><strong></strong>
+</p>
+<p>
+    <strong><span>&nbsp;</span></strong>
+</p>
+<p>
+    <strong><span>&nbsp;</span></strong>
+</p>
+<p>
+    <strong><span style="font-family:宋体">酷星</span><span>APP</span></strong><strong><span style="font-family:宋体">，所有演出商品在平台交易，平台会收演出商品成交价的</span><span>17%</span></strong><strong><span style="font-family:宋体">费用作为平台服务费和用户返利费用</span></strong>
+</p>
+<p>
+    <strong><span>&nbsp;</span></strong>
+</p>
+<p>
+    <strong><span style="text-decoration:underline;"><span style="font-size:16px;font-family:宋体">星币</span></span></strong><span style="font-family:宋体">：为酷星软件里的一种虚拟货币，用于对用户交易后的奖励，命名为；“星币”。星币在酷星软件里可兑换提现，兑现比例为</span><span>10</span><span style="font-family:宋体">个星币</span><span>=1</span><span style="font-family:宋体">元。也可在酷星软件里的商品作抵现使用。</span>
+</p>
+<p>
+    <span>&nbsp;</span>
+</p>
+<p>
+    <strong><span style="text-decoration:underline;"><span style="font-size:16px;font-family:宋体">积分</span></span></strong><span style="font-family:宋体">：为酷星软件里的一种虚拟货币积分，用于用户完成平台任务的奖励，积分的使用只限于酷星软件里的商品抵现使用，不可提现和不可购买会员。积分抵现比例为：</span><span>100</span><span style="font-family:宋体">积分</span><span>=1</span><span style="font-family:宋体">元。</span>
+</p>
+<p>
+    <span>&nbsp;</span>
+</p>
+<p>
+    <strong><span style="text-decoration:underline;"><span style="font-size:16px;font-family:宋体">会员说明</span></span></strong><span style="font-family:宋体">：</span>
+</p>
+<p>
+    <span style="font-family:宋体">就是：做平行的两张会员卡。当买了高级卡时，就直接先使用高级卡，中级卡先暂停使用，当高级卡用完了，就继续用中级卡</span>
+</p>
+<p>
+    <span>&nbsp;</span>
+</p>
+<p>
+    <span>1.</span><span style="font-family:宋体">黄金会员和钻石会员有</span><span>1</span><span style="font-family:宋体">个月，</span><span>3</span><span style="font-family:宋体">个月和</span><span>6</span><span style="font-family:宋体">个月三个额度。【这里需要设定每个额度的金额数】</span>
+</p>
+<p>
+    <span>2.</span><span style="font-family:宋体">购买后即显示剩余月份数，比如购买</span><span>6</span><span style="font-family:宋体">个月的，那么在开始使用后，我就剩下</span><span>5</span><span style="font-family:宋体">个月会员。</span>
+</p>
+<p>
+    <span>3.</span><span style="font-family:宋体">在已有黄金会员身份的基础上，再购买同种会员，即为“续费”，有效期直接叠加。</span>
+</p>
+<p>
+    <span>4.</span><span style="font-family:宋体">在已有黄金会员身份的基础上，购买钻石会员，即放弃该月的黄金会员身份，即时启用钻石会员身份。在钻石会员到期之后，再启用黄金会员的剩余月份。</span>
+</p>
+<p>
+    <span>5.</span><span style="font-family:宋体">在钻石会员身份基础上，不可开通或者续费黄金会员。</span>
+</p>
+<p>
+    <span>&nbsp;</span>
+</p>
+<p>
+    <span style="font-family:宋体">方案是：每个按钮，在后台可设置的是“价格”，“会员套餐月份“和”显示文案“。钻石要充</span><span>2</span><span style="font-family:宋体">个月送</span><span>1</span><span style="font-family:宋体">个月，就设置为价格</span><span>=116</span><span style="font-family:宋体">，会员套餐月份</span><span>=3</span><span style="font-family:宋体">，显示文案</span><span>=</span><span style="font-family:宋体">充</span><span>2</span><span style="font-family:宋体">个月送</span><span>1</span><span style="font-family:宋体">个月。</span>
+</p>
+<p>
+    <span>&nbsp;</span>
+</p>
+<p>
+    <span style="font-family:宋体">黄金会员：</span><span>1</span><span style="font-family:宋体">个月</span><span>38</span><span style="font-family:宋体">元，</span><span>3</span><span style="font-family:宋体">个月</span><span>76</span><span style="font-family:宋体">元，</span><span>6</span><span style="font-family:宋体">个月</span><span>148</span><span style="font-family:宋体">元。</span>
+</p>
+<p>
+    <span style="font-family:宋体">钻石会员：</span><span>1</span><span style="font-family:宋体">个月</span><span>58</span><span style="font-family:宋体">元，</span><span>3</span><span style="font-family:宋体">个月</span><span>116</span><span style="font-family:宋体">元，</span><span>6</span><span style="font-family:宋体">个月</span><span>228</span><span style="font-family:宋体">元。</span>
+</p>
+<p>
+    <span>&nbsp;</span>
+</p>
+<p>
+    <strong><span style="font-family:宋体">普通会员权限</span></strong><span style="font-family:宋体">：（普通软件运用权限）</span>
+</p>
+<p>
+    <span style="font-family:宋体">服务商：无，</span>
+</p>
+<p>
+    <span style="font-family:宋体">雇主：成交按每单总价的百分之五（</span><span>5%</span><span style="font-family:宋体">），转换为用星币奖励</span>
+</p>
+<p>
+    <span style="font-family:宋体">（即成交价为</span><span>1000</span><span style="font-family:宋体">元，奖励</span><span>50</span><span style="font-family:宋体">元转换为</span><span>500</span><span style="font-family:宋体">个星币给用户，用户可提现为</span><span>50</span><span style="font-family:宋体">元）</span>
+</p>
+<p>
+    <span>&nbsp;</span>
+</p>
+<p>
+    <strong><span style="font-family:宋体">黄金会员权限</span></strong><span style="font-family:宋体">：</span>
+</p>
+<p>
+    <span style="font-family:宋体">服务商：</span>
+</p>
+<p>
+    <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1 </span><span style="font-family:宋体">资源发布靠前排</span>
+</p>
+<p>
+    <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 2 </span><span style="font-family:宋体">可看资源商品浏览人数（即人气点击量）</span>
+</p>
+<p>
+    <span>&nbsp;</span>
+</p>
+<p>
+    <span style="font-family:宋体">雇主：</span><span>1 </span><span style="font-family:宋体">可看资源商品浏览人数（即人气点击量）</span>
+</p>
+<p>
+    <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 2 </span><span style="font-family:宋体">成交奖励百分比提升（原按总价的</span><span>5%</span><span style="font-family:宋体">奖励，提升到奖励</span><span>10%</span><span style="font-family:宋体">）</span>
+</p>
+<p>
+    <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 3 </span><span style="font-family:宋体">可以进入首页的会员分享下载里面资源文档</span>
+</p>
+<p>
+    <span>&nbsp;</span>
+</p>
+<p>
+    <strong><span style="font-family:宋体">钻石会员权限</span></strong><span style="font-family:宋体">：</span>
+</p>
+<p>
+    <span style="font-family:宋体">服务商：，</span>
+</p>
+<p>
+    <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1 </span><span style="font-family:宋体">资源发布靠前排，</span>
+</p>
+<p>
+    <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 2 </span><span style="font-family:宋体">可看资源商品浏览人数（即人气点击量）</span>
+</p>
+<p>
+    <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 3 </span><span style="font-family:宋体">可查看访客记录</span>
+</p>
+<p>
+    <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 4 </span><span style="font-family:宋体">可进入查看访客点击分析系统</span>
+</p>
+<p style="text-indent:42px">
+    <span style="color:red">5 </span><span style="font-family:宋体;color:red">完成实名认证后可同时发布</span><span style="color:red">20</span><span style="font-family:宋体;color:red">条服务</span>
+</p>
+<p>
+    <span>&nbsp;</span>
+</p>
+<p>
+    <span style="font-family:宋体">雇主：</span>
+</p>
+<p>
+    <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1 </span><span style="font-family:宋体">可看资源商品浏览人数（即人气点击量）</span>
+</p>
+<p>
+    <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 2 </span><span style="font-family:宋体">成交奖励百分比提升（按总价的</span><span>13%</span><span style="font-family:宋体">奖励）</span>
+</p>
+<p>
+    <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 3</span><span style="font-family:宋体">可以进入首页的会员分享下载里面资源文档</span>
+</p>
+<p>
+    <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 4</span><span style="font-family:宋体">任务大厅积分倍增（即签到送</span><span>20</span><span style="font-family:宋体">分升级至送</span><span>40</span><span style="font-family:宋体">分）</span>
+</p>
+<p>
+    <span>&nbsp;</span>
+</p>
+<p>
+    <strong><span style="text-decoration:underline;"><span style="font-size:16px;font-family:宋体">任务大厅积分</span></span></strong><span style="font-family:宋体">：</span>
+</p>
+<p>
+    <span style="font-family:宋体">普通会员：</span>
+</p>
+<p>
+    <span>1 </span><span style="font-family:宋体">用户每连续登陆</span><span>3</span><span style="font-family:宋体">天，第三天可领取（</span><span>20</span><span style="font-family:宋体">积分）</span>
+</p>
+<p>
+    <span>2 </span><span style="font-family:宋体">登录</span><span>3</span><span style="font-family:宋体">天以上每天，每天可获得（</span><span>10</span><span style="font-family:宋体">积分）</span>
+</p>
+<p>
+    <span>3</span><span style="font-family:宋体">分享邀请码他人成功下载，可领取（</span><span>100</span><span style="font-family:宋体">积分）（限首次下载）</span>
+</p>
+<p>
+    <span>4</span><span style="font-family:宋体">第一次成功交易可领取（</span><span>100</span><span style="font-family:宋体">积分）</span>
+</p>
+<p>
+    <span style="font-family:宋体">钻石会员：可获得以上双倍积分</span>
+</p>
+<p>
+    <span style="background:yellow;background: yellow">&nbsp;</span>
+</p>
+<p>
+    <strong><span style="font-family:宋体;background:yellow;background:yellow">代金券使用规则（平台设定规则）</span></strong><span style="font-family:宋体;background:yellow;background:yellow">：</span>
+</p>
+<p>
+    <span style="font-family:宋体;background:yellow;background:yellow">发放规则（三种）：</span>
+</p>
+<p class="MsoListParagraph" style="margin-left:24px">
+    <span style=";background:yellow;background:yellow">1.<span style="font-variant-numeric: normal;font-stretch: normal;font-size: 9px;line-height: normal;font-family: &#39;Times New Roman&#39;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span><span style="font-family:宋体;background:yellow;background:yellow">在某段日期内发放；</span>
+</p>
+<p class="MsoListParagraph" style="margin-left:24px">
+    <span style=";background:yellow;background:yellow">2.<span style="font-variant-numeric: normal;font-stretch: normal;font-size: 9px;line-height: normal;font-family: &#39;Times New Roman&#39;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span><span style="font-family:宋体;background:yellow;background:yellow">在某段日期内购买全线产品发放；</span>
+</p>
+<p class="MsoListParagraph" style="margin-left:24px">
+    <span style=";background:yellow;background:yellow">3.<span style="font-variant-numeric: normal;font-stretch: normal;font-size: 9px;line-height: normal;font-family: &#39;Times New Roman&#39;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span><span style="font-family:宋体;background:yellow;background:yellow">在某段日期内购买全线产品达到一定金额发放。</span>
+</p>
+<p>
+    <span style="font-family:宋体;background:yellow;background:yellow">使用规则：</span>
+</p>
+<p class="MsoListParagraph" style="margin-left:24px">
+    <span style=";background:yellow;background:yellow">1.<span style="font-variant-numeric: normal;font-stretch: normal;font-size: 9px;line-height: normal;font-family: &#39;Times New Roman&#39;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span><span style="font-family:宋体;background:yellow;background:yellow">一次只可使用一张</span><span style="background:yellow;background:yellow">/</span><span style="font-family: 宋体;background:yellow;background:yellow">两张；</span>
+</p>
+<p class="MsoListParagraph" style="margin-left:24px">
+    <span style=";background:yellow;background:yellow">2.<span style="font-variant-numeric: normal;font-stretch: normal;font-size: 9px;line-height: normal;font-family: &#39;Times New Roman&#39;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span><span style="font-family:宋体;background:yellow;background:yellow">在某段日期内可使用；</span>
+</p>
+<p class="MsoListParagraph" style="margin-left:24px">
+    <span style=";background:yellow;background:yellow">3.<span style="font-variant-numeric: normal;font-stretch: normal;font-size: 9px;line-height: normal;font-family: &#39;Times New Roman&#39;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span><span style="font-family:宋体;background:yellow;background:yellow">在某段日期内，订单达到一定金额可使用。</span>
+</p>
+<p>
+    <span>&nbsp;</span>
+</p>
+<p>
+    <span>&nbsp;</span>
+</p>
+<p>
+    <strong><span style="text-decoration:underline;"><span style="font-size:16px">B</span></span></strong><strong><span style="text-decoration:underline;"><span style="font-size:16px;font-family:宋体">端商家服务评价功能计算规则（即商家信誉）</span></span></strong><strong><span style="font-family:宋体">：</span></strong>
+</p>
+<p>
+    <span style="font-size:12px;font-family:宋体;color:#333333">1</span><span style="font-size:12px;font-family:宋体;color:#333333">、服务商信誉等级评价计算说明<span>:</span>服务商信誉等级分为（皇冠、优、良、普、差）五个级数，所有新服务商原始信誉为“普”（分值为<span>3</span>分）。</span>
+</p>
+<p>
+    <span style="text-decoration:underline;"><span style="font-size:12px;font-family:宋体;color:#333333">0</span></span><span style="text-decoration:underline;"><span style="font-size:12px;font-family:宋体;color:#333333">分以下为“差”，<span>0-7</span>分为“普”，<span>8-15</span>分为“良”，<span>16-25</span>分为“优”，<span>26-36</span>分为“皇冠”，<span>36</span>分为最高封顶值。</span></span>
+</p>
+<p>
+    <span style="font-size:12px;font-family:宋体;color:#333333">当服务商发布服务交易完成时，雇主给服务商评价服务分为（好评、中评、差评）三种评选，<span style="text-decoration:underline;">每收到好评一次<span>+1</span>分，中评<span>+0</span>分，差评<span>-3</span>分。</span></span>
+</p>
+<p>
+    <strong><span style="text-decoration:underline;"><span style="font-size:12px;font-family:宋体;color:#333333"><img width="356" height="175" src="file:///C:/Users/chenc/AppData/Local/Temp/msohtmlclip1/01/clip_image002.jpg" alt="评级表.jpg"/></span></span></strong><strong><span style="text-decoration:underline;"></span></strong>
+</p>
+<p>
+    <span style="font-size:12px;font-family:宋体;color:#333333">例：（初始值<span>3</span>分为“普”）<strong><span style="text-decoration:underline;">普</span></strong><span style="text-decoration:underline;">→→<span>5</span>次好评→→<strong>良</strong>→→<span>8</span>次好评→→<strong>优</strong>→→<span>10</span>好评→→<strong>皇冠</strong>→→<strong>（存<span>10</span>个好评封顶）</strong></span>。约分值为<span>0</span>以下即为“<strong>差</strong>”这时平台发出警告；再收一次差评，平台要求服务商购买“信誉保证金”才能继续发布服务）（信誉保证金当服务商订单结清为<span>0</span>时可申请“退还”）</span>
+</p>
+<p>
+    <span style="font-size:12px;font-family:宋体;color:#333333">（服务商端等级头像显示为皇冠<span>+</span>？，优<span>+</span>？，良<span>+</span>？，普<span>+</span>？，差<span>-</span>？）（雇主端只显示皇冠，优，良，普，差）</span>
+</p>
+<p>
+    <span style="color:red">&nbsp;</span>
+</p>
+<p>
+    <span>B</span><span style="font-family:宋体">端商家购买“信誉保证金”（公司机构为</span><span>500</span><span style="font-family:宋体">元，个体商家为</span><span>300</span><span style="font-family:宋体">元）。如保证金扣完平台会提示“再需交保证金”（商家发布时自愿交保证金，在用户头像都有“保”字样的保障标识）<span style="background:yellow;background:yellow">【一但有被扣除，保证金不为满时，即去掉头衔】</span>（</span><span>B</span><span style="font-family:宋体">商家端等级头像显示为皇冠</span><span>+</span><span style="font-family:宋体">？，优</span><span>+</span><span style="font-family:宋体">？，良</span><span>+</span><span style="font-family:宋体">？，普</span><span>+</span><span style="font-family:宋体">？，差</span><span>-</span><span style="font-family:宋体">？）（</span><span>C</span><span style="font-family:宋体">端用户只显示皇冠，优，良，普，差）</span>
+</p>
+<p>
+    <span>&nbsp;</span>
+</p>
+<p>
+    <span>&nbsp;</span>
+</p>
+<p>
+    <strong><span style="text-decoration:underline;"><span style="font-size:16px">C</span></span></strong><strong><span style="text-decoration:underline;"><span style="font-size:16px;font-family:宋体">端用户对</span></span></strong><strong><span style="text-decoration:underline;"><span style="font-size:16px">B</span></span></strong><strong><span style="text-decoration:underline;"><span style="font-size:16px;font-family:宋体">端商家服务商品评星说明</span></span></strong><span style="font-family:宋体">：每次演出服务结束后可以对演出质量评价，选（</span><span>1</span><span style="font-family:宋体">星至</span><span>5</span><span style="font-family:宋体">星）评选。服务商品发布显示评星状态为，所有用户评价的平均值显示。（即</span><span>2</span><span style="font-family:宋体">位用户分别第一位评</span><span>1</span><span style="font-family:宋体">星，第二位评</span><span>5</span><span style="font-family:宋体">星，平均值为</span><span>3</span><span style="font-family:宋体">星）</span>
+</p>
+<p>
+    <span>&nbsp;</span>
+</p>
+<p>
+    <span>&nbsp;</span>
+</p>
+<p style="margin-left:80px">
+    <strong><span style="text-decoration:underline;"><span style="font-size:16px;font-family:宋体">悬赏红包</span></span></strong><span style="font-family:宋体">：为商家发布服务商品时奖励给用户的红包，商家发布时可设置</span><span>1</span><span style="font-family:宋体">元至商品服务价格的</span><span>30%</span><span style="font-family:宋体">区间，但最高值为</span><span>300</span><span style="font-family:宋体">元的区间内（例：当商品价为</span><span>500</span><span style="font-family:宋体">元红包最高可设置</span><span>150</span><span style="font-family:宋体">元，当商品</span><span>1000</span><span style="font-family:宋体">元红包最高可设置</span><span>300</span><span style="font-family:宋体">元，当商品</span><span>2000</span><span style="font-family:宋体">元红包最高可设置为</span><span>300</span><span style="font-family:宋体">元），也可以设置关闭。当商品成交结束时，平台打给商家成交费用时自动扣除给用户，并提示商家扣除原因为“悬赏红包”。</span>
+</p>
+<p>
+    <span>&nbsp;</span>
+</p>
+<p>
+    <strong><span style="text-decoration:underline;"><span style="font-size:16px">C</span></span></strong><strong><span style="text-decoration:underline;"><span style="font-size:16px;font-family:宋体">端用户退单规则</span></span></strong><strong><span style="font-family:宋体">：</span></strong><span style="font-family:宋体">（下单时提醒雇主，一经签订退单按“退单赔偿制度”执行赔偿给商家，注意退单可能会为你带来资金损失）</span>
+</p>
+<p>
+    <span style="font-family:宋体">雇主拍错退单，在成交</span><span>3</span><span style="font-family:宋体">小时内退单不扣任何赔偿费。（和商家协商双方愿意“协定退单”不扣任何赔偿费）</span>
+</p>
+<p>
+    <strong><span style="font-family:宋体">“强制退单”按以下规则赔偿</span></strong><span style="font-family:宋体">：</span>
+</p>
+<p>
+    <span style="font-family:宋体">雇主退单在离演出订单时间区域</span><span>12</span><span style="font-family:宋体">天以上（即</span><span>288</span><span style="font-family:宋体">小时外）退单不需扣任何赔偿费用</span>
+</p>
+<p>
+    <span style="font-family:宋体">雇主退单在离演出订单时间区域（</span><span>12</span><span style="font-family:宋体">天内</span><span>--5</span><span style="font-family:宋体">天外）（即</span><span>288</span><span style="font-family:宋体">小时内</span><span>—120</span><span style="font-family:宋体">小时外）内退单扣成交总金额</span><span>20%</span><span style="font-family:宋体">赔偿费用</span>
+</p>
+<p>
+    <span style="font-family:宋体">雇主退单在离演出订单时间区域</span><span>5</span><span style="font-family:宋体">天（即</span><span>120</span><span style="font-family:宋体">小时）内退单扣成交总金额</span><span>50%</span><span style="font-family:宋体">赔偿费用</span>
+</p>
+<p>
+    <span style="font-family:宋体;color:red">（当订单签到后双方不可退单）</span>
+</p>
+<p>
+    <span>&nbsp;</span>
+</p>
+<p>
+    <span>&nbsp;</span>
+</p>
+<p>
+    <strong><span style="text-decoration:underline;"><span style="font-size:16px">B</span></span></strong><strong><span style="text-decoration:underline;"><span style="font-size:16px;font-family:宋体">端（公司）商家退单规则</span></span></strong><strong><span style="font-family:宋体">：</span></strong>
+</p>
+<p>
+    <span style="font-family:宋体">服务商搞错退单，在成交</span><span>3</span><span style="font-family:宋体">小时内退单不承担任何赔偿费。</span>
+</p>
+<p>
+    <strong><span style="font-family:宋体">（用户付款前会有模板合同选项给双方打勾同意才下一步付款成交）此时平台需提醒“注意合同”</span></strong>
+</p>
+<p>
+    <strong><span style="font-family:宋体">模板合同</span><span>B</span></strong><strong><span style="font-family:宋体">端退单规则：<span style="color:red">（以下是双方按模板合同私下要求赔偿，平台只提供凭证，不干涉任何以下赔付维权和承担责任）</span></span></strong>
+</p>
+<p>
+    <span style="font-family:宋体">服务商退单在离演出订单时间区域（</span><span>12</span><span style="font-family:宋体">天内</span><span>--3</span><span style="font-family:宋体">天外）（即</span><span>288</span><span style="font-family:宋体">小时内</span><span>—72</span><span style="font-family:宋体">小时外）内退单，需赔偿成交总金额</span><span>50%</span><span style="font-family:宋体">费用给用户</span>
+</p>
+<p>
+    <span style="font-family:宋体">服务商退单在离演出订单时间区域（</span><span>3</span><span style="font-family:宋体">天内）（即</span><span>72</span><span style="font-family:宋体">小时内）内退单，需赔偿成交总金额</span><span>100%</span><span style="font-family:宋体">费用给用户</span>
+</p>
+<p>
+    <strong><span style="font-family:宋体;color:#0070C0">如</span><span style="color:#0070C0">B</span></strong><strong><span style="font-family:宋体;color:#0070C0">端退单，酷星平台有收</span><span style="color:#0070C0">B</span></strong><strong><span style="font-family:宋体;color:#0070C0">端保证金，酷星平台有权用</span><span style="color:#0070C0">B</span></strong><strong><span style="font-family:宋体;color:#0070C0">端这部分保证金先付赔偿</span><span style="color:#0070C0">C</span></strong><strong><span style="font-family:宋体;color:#0070C0">端的部分损失<span style="background:yellow;background:yellow">【当有保的头衔时就将全部保证金都退给</span></span><span style="color:#0070C0;background:yellow;background:yellow">C</span></strong><strong><span style="font-family:宋体;color:#0070C0;background:yellow;background:yellow">端，当保证金不足</span><span style="color:#0070C0;background:yellow;background:yellow">500/300</span></strong><strong><span style="font-family:宋体;color:#0070C0;background:yellow;background:yellow">，也就是没有头衔的时候，就不赔付】</span></strong>
+</p>
+<p>
+    <span>&nbsp;</span>
+</p>
+<p>
+    <span>&nbsp;</span>
+</p>
+<p>
+    <br/>
+</p>
+</body>
+</html>

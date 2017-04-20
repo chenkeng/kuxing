@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>劲舞团组合夜趴</title>
+    <link rel="stylesheet" type="text/css" href="css/base.css">
+    <link rel="stylesheet" href="css/style.css">
+    <style type="text/css">
+    * {
+        margin: 0;
+        padding: 0;
+    }
+    
+    .box {
+        background-color: #ffffff;
+        padding: 0 1rem;
+        margin-bottom: .5rem;
+    }
+    
+    .pay p {
+        font-size: 1.2rem;
+        line-height: 4rem;
+    }
+    
+    .pay input[type="text"] {
+        border: none;
+        width: 100%;
+        line-height: 5rem;
+        text-indent: 2em;
+        font-size: 2.2rem;
+        background: url(images/moneyIcon.png) no-repeat left center;
+        background-size: 1rem;
+    }
+    
+    .pay p:nth-child(2) {
+        border-bottom: 1px solid #bdbdbd;
+    }
+    
+    .pay p:nth-child(3) {
+        color: #bdbdbd;
+    }
+    
+    .payways p {
+        border-bottom: 1px solid #bdbdbd;
+        line-height: 4rem;
+        height: 4rem;
+        text-indent: 3rem;
+    }
+    
+    .payways .package {
+        background: url(images/package@2x.png) no-repeat left center;
+    }
+    
+    .payways .wechat {
+        background: url(images/wechat@2x.png) no-repeat left center;
+    }
+    
+    .payways .zhifubao {
+        background: url(images/zhifubao@2x.png) no-repeat left center;
+    }
+    
+    .package span,
+    .wechat span,
+    .zhifubao span {
+        display: inline-block;
+        width: 3rem;
+        height: 4rem;
+    }
+    
+    .checkon {
+        background: url(images/checked.png) no-repeat right center;
+    }
+    
+    .checkoff {
+        background: url(images/uncheck.png) no-repeat right center;
+    }
+    .tips{
+        color: #bdbdbd;
+        padding: 0 1rem;
+        line-height: 2rem;
+    }
+    .save{
+        margin: 1rem  2rem;
+        background: #000;
+        border-radius: 4rem;
+        height: 4rem;
+        line-height: 4rem;
+    }
+    .save a{
+        display: inline-block;
+        width: 100%;
+        color: #fff;
+        font-size: 1.2rem;
+        text-align: center;line-height: 4rem;
+    }
+    </style>
+</head>
+
+<body>
+    <div class="box pay">
+        <p>支付金额</p>
+        <p>
+            <input type="text">
+        </p>
+        <p>支付以后将点亮信用保证头衔</p>
+    </div>
+    <div class="box payways">
+        <p class="package clearfix">钱包支付<span class="checkon right"></span></p>
+        <p class="wechat clearfix">微信支付<span class="checkoff right"></span></p>
+        <p class="zhifubao clearfix">支付宝支付<span class="checkon right"></span></p>
+    </div>
+    <div class="tips">*请确保账号和校验姓名正确</div>
+    <div class="save">
+        <a href="">支付</a>
+    </div>
+</body>
+
+</html>

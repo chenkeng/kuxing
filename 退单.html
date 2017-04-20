@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>取消订单</title>
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        body{
+            background-color: #FFFFFF;
+        }
+        .box{
+
+        }
+        .box p{
+            padding: 0 1rem;
+            background-color: #FFFFFF;
+            color: #1e1e1e;
+            font-size: 1.2rem;
+            height:4rem;
+            line-height: 4rem;
+            border-bottom: 1px solid #bdbdbd;
+        }
+        .box p:nth-child(1){
+            background-color: #efefef;
+        }
+        .box p span{
+            display: inline-block;
+            width: 2rem;
+            height:4rem;
+            line-height: 4rem;
+        }
+        .box p span.unchecked{
+            background: url("images/uncheck.png") no-repeat center;
+            background-size: 2rem;
+        }
+        .box p span.checked{
+            background: url("images/checked.png") no-repeat center;
+            background-size: 2rem;
+        }
+        .save{
+            position: absolute;
+            left:0;
+            bottom:0;
+            width:100%;
+            font-size: 1.2rem;
+            line-height: 4rem;
+            height:4rem;
+            text-align: center;
+            color: #FFFFFF;
+            background-color: #818181;
+        }
+    </style>
+</head>
+<body>
+<div class="box clearfix">
+    <p>选择您取消订单的原因：</p>
+    <p>日期突然有变动<span class="right unchecked"></span></p>
+    <p>场所相关审批未通过<span class="right unchecked"></span></p>
+    <p>已预定其他<span class="right checked"></span ></p>
+    <p>其他</p>
+</div>
+
+<div class="save">
+    确定
+</div>
+</body>
+</html>
